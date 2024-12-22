@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-  <title>Anki po polsku</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prace w toku</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #282c34;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: #20232a;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .work-in-progress {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            margin: 10px auto;
+            border: 5px solid #61dafb;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Praca wre</h1>
-  <p>Strona poświęcona "Anki - flashcards system".</p>
+    <header>
+        <h1>Nagłówek</h1>
+    </header>
+    <main>
+        <div>
+            <div class="circle"></div>
+            <div class="work-in-progress">Prace w toku...</div>
+        </div>
+    </main>
+    <footer>
+        <p>Stopka</p>
+    </footer>
 </body>
 </html>
+
+Co zawiera kod:
+
+1. Nagłówek i stopkę z wycentrowanym tekstem oraz ciemnym tłem.
+
+
+2. Główna treść z animacją obracającego się koła, która symbolizuje "Prace w toku".
+
+
+3. Prosty i przejrzysty design w trybie ciemnym.
+
+
+
+Daj znać, jeśli chcesz dostosować lub rozszerzyć ten kod!
+
